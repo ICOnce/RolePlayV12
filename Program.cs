@@ -16,4 +16,3 @@ Console.WriteLine("After damage:");
 Console.WriteLine(warriorA.GetInfo());
 Console.WriteLine(warriorB.GetInfo());
 Console.WriteLine();
-Console.WriteLine();
