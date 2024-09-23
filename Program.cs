@@ -1,0 +1,18 @@
+﻿Sword sword = new Sword("Name", 10, 20);
+Warrior warriorA = new Warrior("Ragnar", 200, 60, sword);
+Warrior warriorB = new Warrior("Lagertha", 240, 50, sword);
+
+Console.WriteLine("Just after creation:");
+Console.WriteLine(warriorA.GetInfo());
+Console.WriteLine(warriorB.GetInfo());
+Console.WriteLine();
+
+int damageFromA = warriorA.DealDamage();
+int damageFromB = warriorB.DealDamage();
+warriorA.ReceiveDamage(damageFromB);
+warriorB.ReceiveDamage(damageFromA);
+
+Console.WriteLine("After damage:");
+Console.WriteLine(warriorA.GetInfo());
+Console.WriteLine(warriorB.GetInfo());
+Console.WriteLine();
